@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>좋아하는 계절</legend>
+        <h3>[1]봄 [2]여름 [3]가을 [4]겨울</h3>
+        <input type="text" id="season" autofocus/>
+        <input type="button" value="확인" onclick="like()"/>
+        <h1 id="result"></h1>
+    </fieldset>
+</body>
+
+<script>
+    function like(){
+        let season = document.getElementById("season").value;
+        let result = document.getElementById("result");
+        
+        if(season == 1 || season == "봄"){
+            result.innerHTML = "봄에는 꽃이 핍니다";
+        }else if(season == 2 || season == "여름"){
+            result.innerHTML = "여름에는 바다에 갑니다";
+        }else if(season == 3 || season == "가을"){
+            result.innerHTML = "가을에는 낙엽이 집니다";
+        }else if(season == 4 || season == "겨울"){
+            result.innerHTML = "겨울에는 눈이 옵니다";
+        }else{
+            result.innerHTML = "1~4번까지만 입력해주세요";
+            document.getElementById("season").value = "";
+            document.getElementById("season").focus();
+        }
+    }
+</script>
+
+</html>

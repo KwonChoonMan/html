@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let kor = 89;
+    let mat = 78;
+    let eng = 88;
+    let sum = kor+mat+eng;
+    let avg = sum/3;
+    
+    // avg 기준으로 90점 이상 A, 80점 이상 B, 70점 이상 C, 
+    // 60점 이상 D, 나머지 F
+    let grade;
+    if(avg >= 90){
+        grade = "A";
+    }else if(avg >= 80){
+        grade = "B";
+    }else if(avg >= 70){
+        grade = "C";
+    }else if(avg >= 60){
+        grade = "D";
+    }else{
+        grade = "F";
+    }
+    alert("학점은 "+grade+"입니다");
+
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>특정 수까지의 합</legend>
+        <input type="number" id="num" />
+        <input type="button" value="총합" onclick="sum()"/>
+        <h1 id="result"></h1>
+    </fieldset>
+</body>
+
+<script>
+    function sum(){
+        let num = Number(document.getElementById("num").value);
+        // num이 10인 경우
+        // 1~10까지의 합 : 55
+        let sum = 0;
+        for(let i=1; i<=num; i++){
+            sum = sum + i;
+        }
+        document.getElementById("result").innerHTML =
+        "1부터 "+num+"까지의 합 : "+sum;
+    }
+</script>
+
+</html>
