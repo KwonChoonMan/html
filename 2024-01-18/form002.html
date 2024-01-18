@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="http://localhost:5000/sample" method="get">
+    <!--
+        input의 속성 
+       id 속성 : 프론트(css jv)에서 사용하는 이름
+        name 속성 : 백에서 사용하는 이름 
+
+        http://localhost:5000/sample?irum=spring&password=1234
+         id는 프론트에서만 사용되기에 서버에 넘어갈때 퀴리문으로 안넘어감
+     -->
+     <input name="irum" id="irum" value="spring"><br>
+     <input name="password" id="password" value="1234"><br>
+     <input id ="nai" value="20"><br>
+     <button>보내기</button>
+
+
+   </form>
+    <!-- front와 back은 다 백에서 운영할 수 있다(MVC 또는 model2)
+        - only web
+        - front -> back
+        - back -> front -> back 기술마다 다르다 
+          front와 back 별개로 운영할 수 있다(rest)                              
+          - 프론트와 백을 분리
+          - web , 안드로이드 , ios , 프론트를 백과 동시에 개발할 수 있다
+        -->
+</body>
+</html>
